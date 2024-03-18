@@ -1,13 +1,15 @@
 <?php
 
-class SamplePackage
+use Diana\Runtime\Package;
+
+class SamplePackage extends Package
 {
-    public function register() // TODO: Dependency injection here
+    public function register(): void // TODO: Dependency injection here
     {
         // $router->loadRoutes(); // load additional routes to the router
     }
 
-    public function boot()
+    public function boot(): void
     {
 
     }
