@@ -1,0 +1,27 @@
+{
+    "name": "diana/package",
+    "version": "dev-master",
+    "description": "a diana package",
+    "keywords": [
+        "diana",
+        "framework",
+        "php"
+    ],
+    "type": "library",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio Ianzano",
+            "email": "ianzanoan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.3"
+    }
+}
