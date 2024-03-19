@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'packages' => []
+    'packages' => [],
+    'controllers' => [TestController::class]
 ];
