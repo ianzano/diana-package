@@ -7,7 +7,7 @@ class SamplePackage extends Package
 {
     public function register(): void
     {
-        // $router->loadRoutes(); // load additional routes to the router
+        $this->registerController(TestController::class);
     }
 
     public function boot(): void
