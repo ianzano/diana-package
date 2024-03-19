@@ -1,13 +1,13 @@
 <?php
 
+use Diana\Runtime\Application;
 use Diana\Runtime\Package;
-use Diana\Support\Debug;
 
 class SamplePackage extends Package
 {
-    public function register(): void
+    public function register(Application $app): void
     {
-        $this->registerController(TestController::class);
+        $app->registerController(TestController::class);
     }
 
     public function boot(): void
