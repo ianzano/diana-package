@@ -1,4 +1,5 @@
 <?php
+
 use Diana\Routing\Attributes\Get;
 use Diana\Routing\Attributes\Middleware;
 
@@ -10,6 +11,6 @@ class SampleController
     #[Middleware(SampleMiddleware::class)]
     public function home()
     {
-        return 'Welcome home.';
+        return 'Welcome home. You have loaded the following controllers: ' . join(', ', App::getControllers()) . '.';
     }
 }
