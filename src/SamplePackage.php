@@ -10,7 +10,7 @@ class SamplePackage extends Package
 {
     public function __construct(Application $app)
     {
-        $app->registerController(TestController::class);
+        $app->registerController(SampleController::class);
     }
 
     public function register(): void
