@@ -11,6 +11,6 @@ class SampleController
     #[Middleware(SampleMiddleware::class)]
     public function home()
     {
-        return 'Welcome home. You have loaded the following controllers: ' . join(', ', App::getControllers()) . '.';
+        return 'You are running Diana on version ' . App::getVersion() . '.<p>You are running the following kernel: ' . App::resolve('kernel')::class . '.<p>You have loaded the following packages:<ul>' . App::getPackages()->wrap('<li>', '</li>') . '</ul>You have loaded the following controllers: <ul>' . App::getControllers()->wrap('<li>', '</li>') . '</ul>';
     }
 }
